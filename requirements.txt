@@ -1,0 +1,6 @@
+langchain
+langgraph
+haystack
+opik
+pydantic
+prometheus-client
