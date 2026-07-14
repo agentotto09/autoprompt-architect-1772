@@ -1,0 +1,85 @@
+langchain:
+  api_key: "YOUR_LANGCHAIN_API_KEY"
+  endpoint: "https://api.langchain.dev/v1"
+
+langgraph:
+  api_key: "YOUR_LANGGRAPH_API_KEY"
+  endpoint: "https://api.langgraph.dev/v1"
+
+haystack:
+  api_key: "YOUR_HAYSTACK_API_KEY"
+  endpoint: "https://api.haystack.dev/v1"
+
+opik:
+  api_key: "YOUR_OPIK_API_KEY"
+  endpoint: "https://api.opik.dev/v1"
+
+prometheus:
+  endpoint: "http://localhost:9090"
+  metrics:
+    - auto_prompt_optimization_success
+    - auto_prompt_optimization_failure
+    - manual_effort_reduction
+    - agent_error_rate
+
+evaluation:
+  accuracy:
+    threshold: 0.9
+  efficiency:
+    threshold: 0.8
+  scalability:
+    threshold: 1000
+  compliance:
+    threshold: 0.95
+
+simulation:
+  environments:
+    - name: "scenario1"
+      description: "Test scenario 1"
+      config:
+        num_agents: 10
+        num_prompts: 100
+    - name: "scenario2"
+      description: "Test scenario 2"
+      config:
+        num_agents: 20
+        num_prompts: 200
+    - name: "scenario3"
+      description: "Test scenario 3"
+      config:
+        num_agents: 30
+        num_prompts: 300
+    - name: "scenario4"
+      description: "Test scenario 4"
+      config:
+        num_agents: 40
+        num_prompts: 400
+    - name: "scenario5"
+      description: "Test scenario 5"
+      config:
+        num_agents: 50
+        num_prompts: 500
+
+monitoring:
+  security:
+    breach_detection:
+      threshold: 5
+      alert_endpoint: "https://example.com/alert"
+    alert_config:
+      - name: "security_breach"
+        description: "Security breach detected"
+        severity: "critical"
+
+hitl:
+  feedback:
+    endpoint: "https://example.com/feedback"
+    config:
+      num_iterations: 3
+      error_rate_threshold: 0.3
+
+production:
+  environment:
+    name: "production"
+    config:
+      uptime_threshold: 0.95
+      stress_test_duration: 604800
